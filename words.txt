@@ -1,0 +1,6 @@
+apple
+oranges
+grapes
+watermelon
+banana
+fish
