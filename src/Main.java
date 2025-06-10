@@ -22,6 +22,8 @@ public class Main {
         System.out.println();
 
        while (wrongGuess < 6) {
+           System.out.println(getHandmanArt(wrongGuess));
+
            System.out.print("Word : ");
 
            for (char c : wordState) {
@@ -42,7 +44,9 @@ public class Main {
                }
 
                if (!wordState.contains('_')) {
+                   System.out.println(getHandmanArt(wrongGuess));
                    System.out.println("You Won");
+                   System.out.println("Correct word is: " + word);
                    System.out.println("Game is Over");
                    break;
                }
@@ -52,13 +56,11 @@ public class Main {
                wrongGuess++;
 
                if (wrongGuess >= 6){
+                   System.out.println(getHandmanArt(wrongGuess));
                    System.out.println("Game is Over");
                    System.out.println("Correct word is: " + word);
                }
            }
-
-
-
 
        }
 
